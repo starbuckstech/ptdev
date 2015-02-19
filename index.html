@@ -3,52 +3,87 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Starter Template - Materialize</title>
+  <title>PrimeTime Abilene Employees</title>
 
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="arcade/error"><i class="mdi-alert-error left tiny"></i>Arcade Errors</a></li>
+    <li><a href="arcade/training"><i class="mdi-social-group-add left tiny"></i>Arcade Training</a></li>
+    <li><a href="arcade/closing"><i class="mdi-device-access-time left tiny"></i>Arcade Closing</a></li>
+    <li class="divider"></li>
+    <li><a href="cc/error"><i class="mdi-alert-error left tiny"></i>CC Errors</a></li>
+    <li class="divider"></li>
+    <li><a href="other/error"><i class="mdi-alert-error left tiny"></i>Other Errors</a></li>
+  </ul>
+
   <nav class="blue darken-1" role="navigation">
     <div class="container">
-      <div class="nav-wrapper"><a id="logo-container" href="." class="brand-logo"><img src="img/PTLogo.png" style="height:60px"></a>
-        <ul class="right">
-          <li><a href="#">Navbar Link</a></li>
+      <div class="nav-wrapper">
+        <a id="logo-container" href="." class="brand-logo"><img src="img/PTLogo.png" style="height:50px"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">QuickLinks<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
         </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
+        <ul id="nav-mobile" class="side-nav collapsible blue darken-1" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="mdi-maps-local-attraction"></i>Arcade</div>
+            <div class="collapsible-body orange"><ul>
+              <li><a href="arcade/error">&#9733 Error Reporting</a></li>
+              <li><a href="arcade/training">&#9733 Training Checklist</a></li>
+              <li><a href="arcade/closing">&#9733 Closing Procedures</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="mdi-social-group"></i>Control Counter</div>
+            <div class="collapsible-body orange"><ul>
+              <li><a href="cc/error">&#9733 Error Reporting</a></li>
+              <li><a href="cc/training">&#9733 Training Checklist</a></li>
+              <li><a href="cc/closing">&#9733 Closing Procedures</a></li>
+              </ul></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="mdi-social-mood"></i>Other Stuff</div>
+            <div class="collapsible-body orange"><ul>
+              <li><a href="other/error">&#9733 Error Reporting</a></li>
+              <li><a href="other/training">&#9733 Training Checklist</a></li>
+              <li><a href="other/closing">&#9733 Closing Procedures</a></li>
+              </ul></div>
+          </li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       </div>
     </div>
-  </nav>
+  </nav> <!--end nav-->
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
       <h1 class="header center orange-text">PrimeTime Employees</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Everthing you'll need to keep our building running smooth including error reporting and training tips</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        <h5 class="header col s12 light">Everthing you'll need to keep our building running smooth including error reporting and training tips for great customer service.</h5>
       </div>
       <br><br>
 
-    </div>
-  </div>
+    </div> <!--end container-->
+  </div> <!--end banner-->
 
 
   <div class="container">
-    <div class="section">
+    <div class="section" id="main-section">
 
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="mdi-maps-local-attraction"></i></h2>
-            <h5 class="center">Arcade</h5>
+            <h2 class="center light-blue-text"><a href="arcade"><i class="mdi-maps-local-attraction"></i></a></h2>
+            <h5 class="center"><a class="waves-effect waves-light orange btn" href="arcade">Arcade</a></h5>
 
             <p class="light center">Arcade games, redemption, laser tag and bumper cars</p>
           </div>
@@ -56,8 +91,8 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="mdi-social-group"></i></h2>
-            <h5 class="center">Control Counter</h5>
+            <h2 class="center light-blue-text"><a href="cc"><i class="mdi-social-group"></i></a></h2>
+            <h5 class="center"><a class="waves-effect waves-light orange btn" href="cc">Control Counter</a></h5>
 
             <p class="light center">Bowling, point of sale, snack bar and NASCAR</p>
           </div>
@@ -65,21 +100,21 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="mdi-action-settings"></i></h2>
-            <h5 class="center">Other</h5>
+            <h2 class="center light-blue-text"><a href="other"><i class="mdi-social-mood"></i></a></h2>
+            <h5 class="center"><a class="waves-effect waves-light orange btn" href="other">Other</a></h5>
 
             <p class="light center">Go carts, batting cages, and everything else</p>
           </div>
         </div>
       </div>
 
-    </div>
+    </div><!--end main section-->
     <br><br>
 
     <div class="section">
 
     </div>
-  </div>
+  </div> <!--end container-->
 
   <footer class="page-footer orange">
     <div class="container">
@@ -93,17 +128,17 @@
         <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href='https://www.facebook.com/groups/228830403837342/'>Employee Group</a></li>
+            <li><a class="white-text" href='https://whentowork.com/logins.htm'>WhenToWork Login</a></li>
             <li><a class="white-text" href="https://github.com/starbuckstech/ptdev">Source Code</a></li>
+
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Contact</h5>
           <ul>
             <li><a class="white-text" href="mailto:adam@starbuckstech.com">Adam</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="mailto:scottie@primetimeabilene.com">Scottie</a></li>
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
@@ -112,11 +147,10 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made with <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize.</a> Please view on mobile for best experience!
       </div>
     </div>
   </footer>
-
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
