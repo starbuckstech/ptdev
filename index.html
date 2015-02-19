@@ -30,34 +30,56 @@
           <li><a class="dropdown-button" href="#!" data-activates="dropdown1">QuickLinks<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
         </ul>
 
-        <ul id="nav-mobile" class="side-nav collapsible blue darken-1" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header"><i class="mdi-maps-local-attraction"></i>Arcade</div>
-            <div class="collapsible-body orange"><ul>
-              <li><a href="arcade/error">&#9733 Error Reporting</a></li>
-              <li><a href="arcade/training">&#9733 Training Checklist</a></li>
-              <li><a href="arcade/closing">&#9733 Closing Procedures</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="mdi-social-group"></i>Control Counter</div>
-            <div class="collapsible-body orange"><ul>
-              <li><a href="cc/error">&#9733 Error Reporting</a></li>
-              <li><a href="cc/training">&#9733 Training Checklist</a></li>
-              <li><a href="cc/closing">&#9733 Closing Procedures</a></li>
-              </ul></div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="mdi-social-mood"></i>Other Stuff</div>
-            <div class="collapsible-body orange"><ul>
-              <li><a href="other/error">&#9733 Error Reporting</a></li>
-              <li><a href="other/training">&#9733 Training Checklist</a></li>
-              <li><a href="other/closing">&#9733 Closing Procedures</a></li>
-              </ul></div>
-          </li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+<!--begin mobile nav-->
+
+      <ul id="slide-out" class="side-nav">
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header">Arcade<i class="mdi-navigation-arrow-drop-down"></i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="arcade/error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
+                  <li><a href="arcade/training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
+                  <li><a href="arcade/closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+         <ul class="collapsible collapsible-accordion">
+           <li>
+             <a class="collapsible-header">Control Counter<i class="mdi-navigation-arrow-drop-down"></i></a>
+             <div class="collapsible-body">
+               <ul>
+                 <li><a href="cc/error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
+                 <li><a href="cc/training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
+                 <li><a href="cc/closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
+               </ul>
+             </div>
+           </li>
+         </ul>
+       </li>
+       <li class="no-padding">
+         <ul class="collapsible collapsible-accordion">
+           <li>
+             <a class="collapsible-header">Other<i class="mdi-navigation-arrow-drop-down"></i></a>
+             <div class="collapsible-body">
+               <ul>
+                 <li><a href="other/error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
+                 <li><a href="other/training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
+                 <li><a href="other/closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
+               </ul>
+             </div>
+           </li>
+         </ul>
+       </li>
+     </ul>
+ <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+<!--end mobile nav-->
+
       </div>
     </div>
   </nav> <!--end nav-->
@@ -65,7 +87,7 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">PrimeTime Employees</h1>
+      <h2 class="header center orange-text">PrimeTime Employees</h2>
       <div class="row center">
         <h5 class="header col s12 light">Everthing you'll need to keep our building running smooth including error reporting and training tips for great customer service.</h5>
       </div>
@@ -83,7 +105,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><a href="arcade"><i class="mdi-maps-local-attraction"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="arcade">Arcade</a></h5>
+            <h5 class="center"><a class="waves-effect waves-light orange btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Arcade is the best" href="arcade">Arcade</a></h5>
 
             <p class="light center">Arcade games, redemption, laser tag and bumper cars</p>
           </div>
@@ -92,7 +114,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><a href="cc"><i class="mdi-social-group"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="cc">Control Counter</a></h5>
+            <h5 class="center"><a class="waves-effect waves-light orange btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Control Counter" href="cc">Control Counter</a></h5>
 
             <p class="light center">Bowling, point of sale, snack bar and NASCAR</p>
           </div>
@@ -101,7 +123,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><a href="other"><i class="mdi-social-mood"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="other">Other</a></h5>
+            <h5 class="center"><a class="waves-effect waves-light orange btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Outdoors and stuff" href="other">Other</a></h5>
 
             <p class="light center">Go carts, batting cages, and everything else</p>
           </div>
@@ -122,7 +144,7 @@
         <div class="col l6 s12">
           <h5 class="white-text">Company Bio</h5>
           <p class="grey-text text-lighten-4">Starbuck's Technology Group is really just one guy working on learning coding and making pretty pieces of usable products. Tell your friends: Go StarbucksTech! Donate now!</p>
-
+          <a href="https://www.coinbase.com/checkouts/8bcd265e743884217968ab35f632f0fd" target="_blank">Every bit counts!</a>
 
         </div>
         <div class="col l3 s12">
@@ -139,8 +161,6 @@
           <ul>
             <li><a class="white-text" href="mailto:adam@starbuckstech.com">Adam</a></li>
             <li><a class="white-text" href="mailto:scottie@primetimeabilene.com">Scottie</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
         </div>
       </div>
@@ -148,7 +168,6 @@
     <div class="footer-copyright">
       <div class="container">
       Made with <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize.</a> Please view on mobile for best experience!
-      </div>
     </div>
   </footer>
 
