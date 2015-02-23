@@ -6,7 +6,7 @@
   <title>PrimeTime Abilene Employees</title>
   <link rel="icon" href="../../img/ico.png">
   <!-- CSS  -->
-  <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -36,8 +36,10 @@
       <!-- <p>Step 1: Choose a date <br> Step 2: Fill out the Arcade Closing form.</p> -->
         <form class="col s12">
           <div class="row">
-            <input type="date" class="datepicker">
+          <div class="input-field col s12">
+            <i class="mdi-action-event large prefix"></i><input type="date" class="datepicker">
             <label for="datepick">Always choose today's date unless you want to view past closing records.</label>
+          </div>
           </div>
 
           <div class="row">
@@ -294,7 +296,7 @@
 
   <!--  Scripts-->
 
-  <script src="../../js/materialize.js"></script>
+  <script src="../../js/materialize.min.js"></script>
   <script src="../../js/init.js"></script>
 
   </body>
