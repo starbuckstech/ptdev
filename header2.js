@@ -21,7 +21,7 @@ document.write('\
 <!--begin mobile nav-->\
 \
       <ul id="slide-out" class="side-nav">\
-        <li><p class="center"><a href="../"><i class="mdi-action-home medium"></i></a></p></li>\
+        <li><p class="center"><a href="../../"><i class="mdi-action-home medium"></i></a></p></li>\
         <li class="no-padding">\
           <ul class="collapsible collapsible-accordion">\
             <li>\
