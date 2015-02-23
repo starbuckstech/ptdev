@@ -10,125 +10,198 @@
   <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+<header>
+  <script src="../../header2.js"></script>
+</header>
 
-  <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="../../arcade/error"><i class="mdi-alert-error left tiny"></i>Arcade Errors</a></li>
-    <li><a href="../../arcade/training"><i class="mdi-social-group-add left tiny"></i>Arcade Training</a></li>
-    <li><a href="../../arcade/closing"><i class="mdi-device-access-time left tiny"></i>Arcade Closing</a></li>
-    <li class="divider"></li>
-    <li><a href="../../cc/error"><i class="mdi-alert-error left tiny"></i>CC Errors</a></li>
-    <li class="divider"></li>
-    <li><a href="../error"><i class="mdi-alert-error left tiny"></i>Other Errors</a></li>
-  </ul>
-
-  <nav class="blue darken-1" role="navigation">
-    <div class="container">
-      <div class="nav-wrapper">
-        <a id="logo-container" href="../../" class="brand-logo"><img src="../../img/PTLogo.png" style="height:50px"></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">QuickLinks<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-        </ul>
-
-<!--begin mobile nav-->
-
-      <ul id="slide-out" class="side-nav">
-        <li><p class="center"><a href="../../"><i class="mdi-action-home medium"></i></a></p></li>
-        <li class="no-padding">
-          <ul class="collapsible collapsible-accordion">
-            <li>
-              <a class="collapsible-header">Arcade<i class="mdi-navigation-arrow-drop-down"></i></a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="../../arcade/error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
-                  <li><a href="../../arcade/training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
-                  <li><a href="../../arcade/closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="no-padding">
-         <ul class="collapsible collapsible-accordion">
-           <li>
-             <a class="collapsible-header">Control Counter<i class="mdi-navigation-arrow-drop-down"></i></a>
-             <div class="collapsible-body">
-               <ul>
-                 <li><a href="../../cc/error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
-                 <li><a href="../../cc/training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
-                 <li><a href="../../cc/closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
-               </ul>
-             </div>
-           </li>
-         </ul>
-       </li>
-       <li class="no-padding">
-         <ul class="collapsible collapsible-accordion">
-           <li>
-             <a class="collapsible-header">Other<i class="mdi-navigation-arrow-drop-down"></i></a>
-             <div class="collapsible-body">
-               <ul>
-                 <li><a href="../error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
-                 <li><a href="../training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
-                 <li><a href="../closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
-               </ul>
-             </div>
-           </li>
-         </ul>
-       </li>
-     </ul>
- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-
-<!--end mobile nav-->
-
-      </div>
-    </div>
-  </nav> <!--end nav-->
-
+<main>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
-      <h2 class="header center orange-text">Template for This Page</h2>
-      <div class="row center">
-        <h5 class="header col s12 light">template template template template template template template template</h5>
-      </div>
-      <br><br>
+      <br>
+      <h5 class="header center orange-text">Arcade Training Checklist</h5>
 
     </div> <!--end container-->
   </div> <!--end banner-->
-
 
   <div class="container">
     <div class="section" id="main-section">
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><a href="#"><i class="mdi-maps-local-attraction"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="#">template</a></h5>
-
-            <p class="light center">template template template template template template template template</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><a href="#"><i class="mdi-social-group"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="#">template</a></h5>
-
-            <p class="light center">template template template template template template template template</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><a href="#"><i class="mdi-social-mood"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="#">template</a></h5>
-
-            <p class="light center">template template template template template template template template</p>
-          </div>
-        </div>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="mdi-maps-directions-walk"></i>Laser Tag</div>
+              <div class="collapsible-body">
+                <form>
+                  <p>
+                    <input type="checkbox" id="laser1" />
+                    <label for="laser1">Watch video, swipe cards, help them put on vests</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="laser2" />
+                    <label for="laser2">Reiterate no running, no physical contact</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="laser3" />
+                    <label for="laser3">Kick out if necessary</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="laser4" />
+                    <label for="laser4">Stay inside the ENTIRE time for insurance reasons and making sure no one gets hurt</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="laser5" />
+                    <label for="laser5">Scores are outside on the big TV</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="laser6" />
+                    <label for="laser6">Make the vests look nice before the next group because our customers like it when things look nice.</label>
+                  </p>
+                </form>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-maps-traffic"></i>Bumper Cars</div>
+              <div class="collapsible-body">
+                <form>
+                  <p>
+                    <input type="checkbox" id="bumper1" />
+                    <label for="bumper1">Swipe cards and check height minimum</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="bumper2" />
+                    <label for="bumper2">Push go to go once everyone has the strap on correctly</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="bumper3" />
+                    <label for="bumper3">Push stop if you really need to</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="bumper4" />
+                    <label for="bumper4">Otherwise, it will stop automatically</label>
+                  </p>
+                </form>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-action-theaters"></i>XD Theater</div>
+              <div class="collapsible-body">
+                <form>
+                  <p>
+                    <input type="checkbox" id="xd1" />
+                    <label for="xd1">Swipe cards and check height minimum</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="xd2" />
+                    <label for="xd2">Ask which movie they want to watch</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="xd3" />
+                    <label for="xd3">Give them glasses</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="xd4" />
+                    <label for="xd4">After they are all buckled up, start the movie and make sure all their seats move</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="xd5" />
+                    <label for="xd5">Clean the dirty glasses while you wait for them to finish</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="xd6" />
+                    <label for="xd6">Open the door and turn on the light as they finish.</label>
+                  </p>
+                </form>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-editor-insert-emoticon"></i>Redemption</div>
+              <div class="collapsible-body"><form>
+                  <p>
+                    <input type="checkbox" id="redemption1" />
+                    <label for="redemption1">Try not to grab things off of the wall.</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="redemption2" />
+                    <label for="redemption2">Scan everything!!</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="redemption3" />
+                    <label for="redemption3">Count WOZ coins</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="redemption4" />
+                    <label for="redemption4">Keep the glass clean</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="redemption5" />
+                    <label for="redemption5">No drinks on the XD counter</label>
+                  </p>
+<!--                   <p>
+                    <input type="checkbox" id="redemption6" />
+                    <label for="redemption6"></label>
+                  </p> -->
+                </form></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-maps-local-attraction"></i>Refilling Tickets</div>
+              <div class="collapsible-body"><form>
+                  <p>
+                    <input type="checkbox" id="tix1" />
+                    <label for="tix1">3 different ticket dispenser types</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="tix2" />
+                    <label for="tix2">Filling tickets in each type</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="tix3" />
+                    <label for="tix3">Lick it and stick it!!!!!!</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="tix4" />
+                    <label for="tix4">Fixing jams</label>
+                  </p>
+<!--                   <p>
+                    <input type="checkbox" id="tix5" />
+                    <label for="tix5"></label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="tix6" />
+                    <label for="tix6"></label> 
+                  </p>-->
+                </form></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="mdi-maps-local-attraction"></i>Ticket Counter</div>
+              <div class="collapsible-body"><form>
+                  <p>
+                    <input type="checkbox" id="count1" />
+                    <label for="count1">Watch for the red light on top of the machine</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="count2" />
+                    <label for="count2">Fixing jams</label>
+                  </p>
+<!--                   <p>
+                    <input type="checkbox" id="count3" />
+                    <label for="count3"></label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="count4" />
+                    <label for="count4"></label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="count5" />
+                    <label for="count5"></label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="count6" />
+                    <label for="count6"></label>
+                  </p> -->
+                </form></div>
+            </li>
+          </ul>
       </div>
 
     </div><!--end main section-->
@@ -138,39 +211,10 @@
 
     </div>
   </div> <!--end container-->
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Starbuck's Technology Group is really just one guy working on learning coding and making pretty pieces of usable products. Tell your friends: Go StarbucksTech! Donate now!</p>
-          <a href="https://www.coinbase.com/checkouts/8bcd265e743884217968ab35f632f0fd" target="_blank">Every bit counts!</a>
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href='https://www.facebook.com/groups/228830403837342/'>Employee Group</a></li>
-            <li><a class="white-text" href='https://whentowork.com/logins.htm'>WhenToWork Login</a></li>
-            <li><a class="white-text" href="https://github.com/starbuckstech/ptdev">Source Code</a></li>
-
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Contact</h5>
-          <ul>
-            <li><a class="white-text" href="mailto:adam@starbuckstech.com">Adam</a></li>
-            <li><a class="white-text" href="mailto:scottie@primetimeabilene.com">Scottie</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made with <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize.</a> Please view on mobile for best experience!
-    </div>
-  </footer>
+</main>
+<footer class="page-footer orange">
+    <script src="../../footer.js"></script>
+</footer>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -8,128 +8,277 @@
   <!-- CSS  -->
   <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="name.js"></script>
 </head>
 <body>
+<header>
+  <script src="../../header2.js"></script>
+</header>
 
-  <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="../../arcade/error"><i class="mdi-alert-error left tiny"></i>Arcade Errors</a></li>
-    <li><a href="../../arcade/training"><i class="mdi-social-group-add left tiny"></i>Arcade Training</a></li>
-    <li><a href="../../arcade/closing"><i class="mdi-device-access-time left tiny"></i>Arcade Closing</a></li>
-    <li class="divider"></li>
-    <li><a href="../../cc/error"><i class="mdi-alert-error left tiny"></i>CC Errors</a></li>
-    <li class="divider"></li>
-    <li><a href="../error"><i class="mdi-alert-error left tiny"></i>Other Errors</a></li>
-  </ul>
-
-  <nav class="blue darken-1" role="navigation">
-    <div class="container">
-      <div class="nav-wrapper">
-        <a id="logo-container" href="../../" class="brand-logo"><img src="../../img/PTLogo.png" style="height:50px"></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">QuickLinks<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-        </ul>
-
-<!--begin mobile nav-->
-
-      <ul id="slide-out" class="side-nav">
-        <li><p class="center"><a href="../../"><i class="mdi-action-home medium"></i></a></p></li>
-        <li class="no-padding">
-          <ul class="collapsible collapsible-accordion">
-            <li>
-              <a class="collapsible-header">Arcade<i class="mdi-navigation-arrow-drop-down"></i></a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="../../arcade/error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
-                  <li><a href="../../arcade/training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
-                  <li><a href="../../arcade/closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="no-padding">
-         <ul class="collapsible collapsible-accordion">
-           <li>
-             <a class="collapsible-header">Control Counter<i class="mdi-navigation-arrow-drop-down"></i></a>
-             <div class="collapsible-body">
-               <ul>
-                 <li><a href="../../cc/error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
-                 <li><a href="../../cc/training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
-                 <li><a href="../../cc/closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
-               </ul>
-             </div>
-           </li>
-         </ul>
-       </li>
-       <li class="no-padding">
-         <ul class="collapsible collapsible-accordion">
-           <li>
-             <a class="collapsible-header">Other<i class="mdi-navigation-arrow-drop-down"></i></a>
-             <div class="collapsible-body">
-               <ul>
-                 <li><a href="../error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
-                 <li><a href="../training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
-                 <li><a href="../closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
-               </ul>
-             </div>
-           </li>
-         </ul>
-       </li>
-     </ul>
- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-
-<!--end mobile nav-->
-
-      </div>
-    </div>
-  </nav> <!--end nav-->
-
+<main>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
-      <h2 class="header center orange-text">Template for This Page</h2>
-      <div class="row center">
-        <h5 class="header col s12 light">template template template template template template template template</h5>
-      </div>
-      <br><br>
+      <br>
+      <h5 class="header center orange-text">Arcade Closing Checklist</h5>
 
     </div> <!--end container-->
   </div> <!--end banner-->
+
 
 
   <div class="container">
     <div class="section" id="main-section">
 
       <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><a href="#"><i class="mdi-maps-local-attraction"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="#">template</a></h5>
+      
+      <!-- <p>Step 1: Choose a date <br> Step 2: Fill out the Arcade Closing form.</p> -->
+        <form class="col s12">
+          <div class="row">
+            <input type="date" class="datepicker">
+            <label for="datepick">Always choose today's date unless you want to view past closing records.</label>
+          </div>
 
-            <p class="light center">template template template template template template template template</p>
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing1" onChange="nameBox1()"/>
+              <label for="closing1">Empty ticket stations and sweep them out.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext1" class=""/>
+              <label for="closingtext1" id="closingtext1label">Name</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing2" onChange="nameBox2()"/>
+              <label for="closing2">Wipe down counters and glass, get rid of any clutter.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext2" class=""/>
+              <label for="closingtext2" id="closingtext2label">Name</label>
+            </div>
+          </div>
+     
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing3" onChange="nameBox3()"/>
+              <label for="closing3">Restock redemption counter.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext3" class=""/>
+              <label for="closingtext" id="closingtext3label">Name</label>
+              </div>
+            </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing4" onChange="nameBox4()" />
+              <label for="closing4">Make sure every type of item has a visible ticket amount.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext4" class=""/>
+              <label for="closingtext" id="closingtext4label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing5" onChange="nameBox5()" />
+              <label for="closing5">Replace ALL stuffed animals on the walls.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext5" class=""/>
+              <label for="closingtext" id="closingtext5label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing6" onChange="nameBox6()" />
+              <label for="closing6">Make sure nothing is behind the white cabinet.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext6" class=""/>
+              <label for="closingtext" id="closingtext6label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing7" onChange="nameBox7()" />
+              <label for="closing7">Wipe down arcade tables and chairs.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext7" class=""/>
+              <label for="closingtext" id="closingtext7label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing8" onChange="nameBox8()" />
+              <label for="closing8">Sweep floors.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext8" class=""/>
+              <label for="closingtext" id="closingtext8label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing9" onChange="nameBox9()" />
+              <label for="closing9">Make sure all laser tag vests and remote are plugged in.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext9" class=""/>
+              <label for="closingtext" id="closingtext9label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing10" onChange="nameBox10()" />
+              <label for="closing10">Shut down Laser Tag and XD Theater.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext10" class=""/>
+              <label for="closingtext" id="closingtext10label">Name</label>
+            </div>
+          </div>
+
+            <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing11" onChange="nameBox11()" />
+              <label for="closing11">Vacuum Laser Tag and XD Theater.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext11" class=""/>
+              <label for="closingtext" id="closingtext11label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing12" onChange="nameBox12()" />
+              <label for="closing12">Declutter all counters and cabinets (including Laser Tag).</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext12" class=""/>
+              <label for="closingtext" id="closingtext12label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing13" onChange="nameBox13()" />
+              <label for="closing13">Count Wizard of Oz coins and return to game.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext13" class=""/>
+              <label for="closingtext" id="closingtext13label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing14" onChange="nameBox14()" />
+              <label for="closing14">Empty Wizard of Oz drop trays.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext14" class=""/>
+              <label for="closingtext" id="closingtext14label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing15" onChange="nameBox15()" />
+              <label for="closing15">Stock all games with tickets.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext15" class=""/>
+              <label for="closingtext" id="closingtext15label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing16" onChange="nameBox16()" />
+              <label for="closing16">Make sure all games listed under your day have been cleaned.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext16" class=""/>
+              <label for="closingtext" id="closingtext16label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing17" onChange="nameBox17()" />
+              <label for="closing17">Record all game issues on the Arcade Error Reporting page.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext17" class=""/>
+              <label for="closingtext" id="closingtext17label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing18" onChange="nameBox18()" />
+              <label for="closing18">Turn off all breakers marked with an "A".</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext18" class=""/>
+              <label for="closingtext" id="closingtext18label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing19" onChange="nameBox19()" />
+              <label for="closing19">Turn off lights by XD and merchandise closet.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext19" class=""/>
+              <label for="closingtext" id="closingtext19label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing20" onChange="nameBox20()" />
+              <label for="closing20">Return promo card and key to cabinet.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext20" class=""/>
+              <label for="closingtext" id="closingtext20label">Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="checkbox" id="closing21" onChange="nameBox21()" />
+              <label for="closing21">Return walkie to manager.</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="closingtext21" class=""/>
+              <label for="closingtext" id="closingtext21label">Name</label>
+            </div>
+          </div>
+        <div class="row">
+          <div class="input-field col s12">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="mdi-content-send right"></i>
+          </button>
           </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><a href="#"><i class="mdi-social-group"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="#">template</a></h5>
-
-            <p class="light center">template template template template template template template template</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><a href="#"><i class="mdi-social-mood"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="#">template</a></h5>
-
-            <p class="light center">template template template template template template template template</p>
-          </div>
-        </div>
-      </div>
+        </form>
+      
 
     </div><!--end main section-->
     <br><br>
@@ -138,42 +287,13 @@
 
     </div>
   </div> <!--end container-->
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Starbuck's Technology Group is really just one guy working on learning coding and making pretty pieces of usable products. Tell your friends: Go StarbucksTech! Donate now!</p>
-          <a href="https://www.coinbase.com/checkouts/8bcd265e743884217968ab35f632f0fd" target="_blank">Every bit counts!</a>
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href='https://www.facebook.com/groups/228830403837342/'>Employee Group</a></li>
-            <li><a class="white-text" href='https://whentowork.com/logins.htm'>WhenToWork Login</a></li>
-            <li><a class="white-text" href="https://github.com/starbuckstech/ptdev">Source Code</a></li>
-
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Contact</h5>
-          <ul>
-            <li><a class="white-text" href="mailto:adam@starbuckstech.com">Adam</a></li>
-            <li><a class="white-text" href="mailto:scottie@primetimeabilene.com">Scottie</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made with <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize.</a> Please view on mobile for best experience!
-    </div>
-  </footer>
+</main>
+<footer class="page-footer orange">
+  <script src="../../footer.js"></script>
+</footer>
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
   <script src="../../js/materialize.js"></script>
   <script src="../../js/init.js"></script>
 

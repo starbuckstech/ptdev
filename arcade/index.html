@@ -10,81 +10,11 @@
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+<header>
+  <script src="../header.js"></script>
+</header>
 
-  <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="error"><i class="mdi-alert-error left tiny"></i>Arcade Errors</a></li>
-    <li><a href="training"><i class="mdi-social-group-add left tiny"></i>Arcade Training</a></li>
-    <li><a href="closing"><i class="mdi-device-access-time left tiny"></i>Arcade Closing</a></li>
-    <li class="divider"></li>
-    <li><a href="../cc/error"><i class="mdi-alert-error left tiny"></i>CC Errors</a></li>
-    <li class="divider"></li>
-    <li><a href="../other/error"><i class="mdi-alert-error left tiny"></i>Other Errors</a></li>
-  </ul>
-
-  <nav class="blue darken-1" role="navigation">
-    <div class="container">
-      <div class="nav-wrapper">
-        <a id="logo-container" href="../" class="brand-logo"><img src="../img/PTLogo.png" style="height:50px"></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">QuickLinks<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-        </ul>
-
-<!--begin mobile nav-->
-
-      <ul id="slide-out" class="side-nav">
-        <li><p class="center"><a href="../"><i class="mdi-action-home medium"></i></a></p></li>
-        <li class="no-padding">
-          <ul class="collapsible collapsible-accordion">
-            <li>
-              <a class="collapsible-header">Arcade<i class="mdi-navigation-arrow-drop-down"></i></a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
-                  <li><a href="training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
-                  <li><a href="closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="no-padding">
-         <ul class="collapsible collapsible-accordion">
-           <li>
-             <a class="collapsible-header">Control Counter<i class="mdi-navigation-arrow-drop-down"></i></a>
-             <div class="collapsible-body">
-               <ul>
-                 <li><a href="../cc/error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
-                 <li><a href="../cc/training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
-                 <li><a href="../cc/closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
-               </ul>
-             </div>
-           </li>
-         </ul>
-       </li>
-       <li class="no-padding">
-         <ul class="collapsible collapsible-accordion">
-           <li>
-             <a class="collapsible-header">Other<i class="mdi-navigation-arrow-drop-down"></i></a>
-             <div class="collapsible-body">
-               <ul>
-                 <li><a href="../other/error"><i class="mdi-alert-error left small"></i>Error Reporting</a></li>
-                 <li><a href="../other/training"><i class="mdi-social-group-add left small"></i>Training Checklist</a></li>
-                 <li><a href="../other/closing"><i class="mdi-device-access-time left small"></i>Closing Procedures</a></li>
-               </ul>
-             </div>
-           </li>
-         </ul>
-       </li>
-     </ul>
- <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-
-<!--end mobile nav-->
-
-      </div>
-    </div>
-  </nav> <!--end nav-->
-
+<main>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
@@ -102,7 +32,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><a href="error"><i class="mdi-alert-error"></i></a></h2>
-            <h5 class="center"><a class="waves-effect waves-light orange btn" href="error">Error Reporting</a></h5>
+            <h6 class="center"><a class="waves-effect waves-light orange btn" href="error">Error Reporting</a></h6>
 
             <p class="light center">Error reporting so we can keep better track of things that go wrong most often.</p>
           </div>
@@ -134,38 +64,9 @@
 
     </div>
   </div> <!--end container-->
-
+</main>
   <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <!-- <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Starbuck's Technology Group is really just one guy working on learning coding and making pretty pieces of usable products. Tell your friends: Go StarbucksTech! Donate now!</p>
-          <a href="https://www.coinbase.com/checkouts/8bcd265e743884217968ab35f632f0fd" target="_blank">Every bit counts!</a> -->
-
-        </div>
-        <div class="col l3 s12">
-          <!-- <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href='https://www.facebook.com/groups/228830403837342/'>Employee Group</a></li>
-            <li><a class="white-text" href='https://whentowork.com/logins.htm'>WhenToWork Login</a></li>
-            <li><a class="white-text" href="https://github.com/starbuckstech/ptdev">Source Code</a></li>
-
-          </ul> -->
-        </div>
-        <div class="col l3 s12">
-          <!-- <h5 class="white-text">Contact</h5>
-          <ul>
-            <li><a class="white-text" href="mailto:adam@starbuckstech.com">Adam</a></li>
-            <li><a class="white-text" href="mailto:scottie@primetimeabilene.com">Scottie</a></li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made with <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize.</a> Please view on mobile for best experience!
-    </div>
+    <script src="../footer.js"></script>
   </footer>
 
   <!--  Scripts-->
